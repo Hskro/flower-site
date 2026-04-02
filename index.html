@@ -1,21 +1,158 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2639
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 AppleColorEmoji;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww28600\viewh18000\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bloom & Petal</title>
 
-\f0\fs24 \cf0 <!DOCTYPE html>\
-<html>\
-<head>\
-  <title>Bloom & Petal</title>\
-</head>\
-<body style="text-align:center; font-family: Arial; background-color:#fff0f5;">\
-\
-  <h1>
-\f1 \uc0\u55356 \u57144 
-\f0  Bloom & Petal</h1>\
-  <p>Fresh flowers for every occasion</p>\
-\
-</body>\
-</html>}
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff7f9;
+}
+
+/* NAVBAR */
+nav {
+    background-color: #f8c8dc;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #5a3e4d;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 60px;
+    background-color: #ffe4ec;
+}
+
+.hero h1 {
+    font-size: 3em;
+    color: #5a3e4d;
+}
+
+/* SECTIONS */
+.section {
+    padding: 40px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* CONTACT FORM */
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #f8c8dc;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f4a6c1;
+}
+
+/* FOOTER */
+footer {
+    background-color: #f8c8dc;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#shop">Shop</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero" id="home">
+    <h1>Bloom & Petal 🌸</h1>
+    <p>Fresh flowers for every occasion</p>
+</div>
+
+<!-- ABOUT -->
+<div class="section" id="about">
+    <h2>About Us</h2>
+    <p>We are a local floral company creating beautiful arrangements for weddings, birthdays, and everyday moments.</p>
+</div>
+
+<!-- SHOP -->
+<div class="section" id="shop">
+    <h2>Our Flowers</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Roses</h3>
+            <p>$25 Bouquet</p>
+        </div>
+        <div class="card">
+            <h3>Tulips</h3>
+            <p>$20 Bouquet</p>
+        </div>
+        <div class="card">
+            <h3>Mixed Flowers</h3>
+            <p>$30 Bouquet</p>
+        </div>
+    </div>
+</div>
+
+<!-- CONTACT -->
+<div class="section" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Order Details" rows="4"></textarea>
+        <button type="submit">Send Order</button>
+    </form>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Bloom & Petal</p>
+</footer>
+
+</body>
+</html>
